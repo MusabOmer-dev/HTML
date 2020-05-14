@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Table TAG</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+        }
+        #CusTable{
+            width: 100%;
+            box-shadow: 0 0 10px black;
+            font-size: 20px;
+        }
+        #CusTable,#CusTable th ,#CusTable td{
+            border: 2px solid orange;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+        simple table
+        table row span
+        table col span
+        custom table with css
+    -->
+<h1>Simple table</h1>
+<table border="2">
+    <thead>
+    <tr>
+        <th>SNO</th>
+        <th>NAME</th>
+        <th>COMPANY</th>
+        <th>LOCATION</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>Musab</td>
+        <td>Oracle</td>
+        <td>Hyderabad</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Ali</td>
+        <td>Microsfot</td>
+        <td>US</td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>Omer</td>
+        <td>Facebook</td>
+        <td>India</td>
+    </tr>
+    </tbody>
+</table>
+<h2>Table with row span</h2>
+<table border="2">
+    <thead>
+    <tr>
+        <td>SNO</td>
+        <td>NAME</td>
+        <td>COMPANY</td>
+        <td>LOCATION</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td rowspan="2">1</td>
+        <td>Musab</td>
+        <td>Oracle</td>
+        <td>Facebook</td>
+    </tr>
+    <tr>
+
+        <td>Ali</td>
+        <td>Microsoft</td>
+        <td>US</td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>Omer</td>
+        <td>Facebook</td>
+        <td>India</td>
+    </tr>
+    </tbody>
+</table>
+
+<h1>Table with col span</h1>
+<table BORDER="2">
+    <thead>
+    <tr>
+        <th>SNO</th>
+        <th>NAME</th>
+        <th COLSPAN="2">COMPANY & LOCATION</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>Musab</td>
+        <td>Oracle</td>
+        <td>Hyderabad</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Ali</td>
+        <td>Microsoft</td>
+        <td>US</td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>Omer</td>
+        <td>Facebook</td>
+        <td>India</td>
+    </tr>
+    </tbody>
+</table>
+
+<h2>Custom Table with CSS</h2>
+    <table id="CusTable">
+        <thead>
+        <tr>
+            <th>SNO</th>
+            <th>NAME</th>
+            <th>COMPANY</th>
+            <th>LOCATION</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Musab</td>
+            <td>Oracle</td>
+            <td>Hyderabad</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Ali</td>
+            <td>Microsoft</td>
+            <td>US</td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Omer</td>
+            <td>Facebook</td>
+            <td>India</td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>
